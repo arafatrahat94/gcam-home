@@ -4,6 +4,9 @@ body{
     background-size: cover;
     font-family: 'Varela Round', sans-serif;
 }
+.language:hover{
+    color: #00eeff;
+}
 /* side nav bar */
 .nav-bar{
     display: flex;
@@ -231,8 +234,22 @@ nav li:hover > a{
     background-color: #ffffff;
     border: 2px solid black;
 }
+
+/* copy right section */
+.copy{
+    margin-top: 10%;
+    border:2px solid #000000;
+    width: auto;
+    background-color: #000000;
+    background-blend-mode: multiply;
+    border-radius: 10px 10px 0 0;
+    font-weight: 600;
+    box-shadow: 1px 1px 20px 1px;
+}
+
+
 /* media query for mobile */
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
     .nav-bar{
         display: none;
     }
