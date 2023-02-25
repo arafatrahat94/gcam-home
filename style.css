@@ -347,7 +347,7 @@ nav li:hover > a{
         border: 2px solid black;
     }
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (min-width: 768px) and (max-width: 800px) {
     nav{
         position: relative;
         bottom: 25px;
@@ -356,10 +356,108 @@ nav li:hover > a{
         padding-left: 10%;
         padding-right: 10%;
         gap: 100px;
-        width: 1000px;
-        margin-left: 45px;
+        width: 800px;
+        margin-left: 65px;
         border-bottom: 1px solid black;
         border-radius: 20px;
         box-shadow: 1px 5px 10px 0px;
     }
+    .gcam{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gcam-container{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        border: 3px solid black;
+        box-shadow: 2px 2px 10px 1px black;
+        margin-left: 350px;
+        padding: 100px 100px;
+        margin-right: 20px;
+    }
+    .gcam-png{
+        width: 250px;
+    }
+    .gcam-info{
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        width: 550px;
+    }
+        /* whyshould style */
+        .whyshould{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 30px;
+            padding: 100px 200px;
+            margin-right: 20px;
+            padding: 10px 10px;
+            width: 1000px;
+        }
+        .why-tittle{
+            font-size: 20px;
+            text-align: center;
+            font-weight: 700;
+        }
+        .why-info{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 20px;
+            width: 700px;
+        }
+    
+    /* best gcam style section  */
+    .best-gcam-container{
+        display: flex;
+        justify-content: center;
+        margin-left: 60px;
+        margin-right: 0px;
+        padding: 5px 30px;
+        width: 900px;
+    }
+    .best-gcam-img{
+        margin-top: 20px;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px 1px black;
+    }
+    .best-gcam-info{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 20px;
+        width: 700px;
+    }
+        /* meet-our-team */
+        .meet-tittle{
+            display: flex;
+            justify-content: center;
+            width: 1100px;
+        }
+        .Meet-Our-Team{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-right: 0;
+            margin-left: 8%;
+        }
+        .meet-conntainer{
+            text-align: center;
+            /* background-color: #00eeff; */
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            border: 2px solid black;
+            box-shadow: 1px 1px 10px 1px;
+        }
+        .team-img{
+            width: 150px;
+            border-radius: 100%;
+            margin-top: 15px;
+            background-color: #ffffff;
+            border: 2px solid black;
+        }
   }
