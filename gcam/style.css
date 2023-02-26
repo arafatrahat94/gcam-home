@@ -1,5 +1,5 @@
 body{
-    background-image: url('../white-painted-wall-texture-background.webp');
+    background-image: url('../images/white-painted-wall-texture-background.webp');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Varela Round', sans-serif;
@@ -51,7 +51,7 @@ body{
     top: 0;
     right: 0;
     /* background: linear-gradient(to bottom left, #ff5050 0%, #ffcc00 100%); */
-    background-image: url('../dark.webp'), url('../gradient1.png');
+    background-image: url('../images/dark.webp'), url('../images/gradient1.png');
     background-blend-mode: soft-light;
     overflow-x: hidden;
     transition: 0.3s;
