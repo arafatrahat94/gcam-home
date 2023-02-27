@@ -201,6 +201,7 @@ nav li:hover > a{
     width: 300px;
     border-radius: 10px;
 }
+
 .best-gcam-info{
     font-size: 20px;
     font-weight: 600;
@@ -302,6 +303,10 @@ nav li:hover > a{
     .gcam-png{
         width: 150px;
     }
+    .gcam-container:hover .gcam-png{
+        transform: rotate(-360deg) scale(0.95);
+        transition: transform 1s ease;
+    }
     .gcam-info{
         font-size: 16px;
         font-weight: 500;
@@ -345,6 +350,10 @@ nav li:hover > a{
         margin-right: 20px;
         padding: 10px 10px;
     }
+    .best-gcam-container:hover .best-gcam-img{
+        transform: rotate(-360deg) scale(0.95);
+        transition: transform 1s ease;
+    }
     .best-gcam-img{
         margin-top: 20px;
         width: 200px;
@@ -380,6 +389,10 @@ nav li:hover > a{
         margin-top: 15px;
         background-color: #ffffff;
         border: 2px solid black;
+    }
+    .meet-conntainer:hover .team-img{
+        transform: rotatez(-360deg) scale(0.90);
+        transition: transform 0.5s ease;
     }
   }
   @media only screen and (min-width: 768px) and (max-width: 844px) and (orientation: landscape) {
