@@ -147,6 +147,14 @@ nav li:hover > a{
     box-shadow: 5px 5px 10px ;
     /* background-color: #000000; */
 }
+@keyframes zoom {
+    from{
+        scale: 0;
+    }
+    to{
+        scale: 1;
+    }
+}
 .gcam-container{
     /* background-color: #00eeff; */
     text-align: center;
@@ -157,6 +165,8 @@ nav li:hover > a{
     font-weight: 600;
     font-size: 20px;
     box-shadow: 5px 5px 10px ;
+    animation: zoom 0.5s ease-in 0s 1 alternate ;
+    transform: scale();
 }
 .gcam-container:hover{
     background-color: #000000;
