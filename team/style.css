@@ -76,7 +76,7 @@ body{
     top: 0;
     right: 0;
     /* background: linear-gradient(to bottom left, #ff5050 0%, #ffcc00 100%); */
-    background-image: url('/images/dark.webp');
+    background-image: url('images/dark.webp');
     background-blend-mode: soft-light;
     overflow-x: hidden;
     transition: 0.3s;
