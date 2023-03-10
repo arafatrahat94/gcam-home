@@ -1,0 +1,442 @@
+body{
+    background-image: url('images/white-painted-wall-texture-background.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Varela Round', sans-serif;
+}
+.language:hover{
+    color: #00eeff;
+}
+.tittle-in{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    bottom: 12px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-top: 2.5px solid black;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 10px 1px black;
+}
+@keyframes zoom {
+    from{
+        transform: rotate(0)
+        scale(0);
+        border-radius: 50%;
+    }
+    to{
+        transform: rotate(-360deg);
+        scale: 1;
+        border-radius: 10px;
+    }
+}
+@keyframes zoom1 {
+    from{
+        transform: rotate(0)
+        scale(0);
+    }
+    to{
+        transform: rotate(-360deg);
+        scale: 1;
+    }
+}
+/* side nav bar */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
+.left-button{
+    display: flex;
+    gap: 20px;
+}
+.back-button{
+    padding-left: 2px;
+    padding-top: 7px;
+    font-size: 28px;
+    text-decoration: none;
+    color: #000000;
+}
+.back-button:hover{
+    color: red;
+}
+.closebtn{
+    color: #ffffff;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    /* background: linear-gradient(to bottom left, #ff5050 0%, #ffcc00 100%); */
+    background-image: url('/images/dark.webp'), url('/images/gradient1.png');
+    background-blend-mode: soft-light;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    text-align: end;
+    padding: 5px 20px 8px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    transition: 0.5s;
+    color: #000000;
+    font-weight: 600;
+  }
+  
+  .sidenav a:hover {
+    color: #00eeff;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 36px;
+    margin-right: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 1px;}
+    .sidenav a {font-size: 18px;}
+  }
+/* meet our team */
+.meet-button{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.meet-tittle{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px;
+    transform: scale(0.85);
+}
+.meet-link{
+    text-decoration: none;
+    color: #000000;
+}
+.Meet-Our-Team{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.meet-conntainer{
+    text-align: center;
+    /* background-color: #00eeff; */
+    width: 270px;
+    height: 400px;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 10px 1px;
+}
+.meet-conntainer:hover{
+    background-image: url('images/gradient1.png');
+    transition: 0.2s;
+    color: red;
+}
+.team-img{
+    width: 250px;
+    border-radius: 100%;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    animation: zoom1 2s ease 0s 3 alternate ;
+    transform: rotate() scale();
+    animation-play-state: inherit;
+}
+
+/* media query for mobile */
+@media only screen and (min-width: 600px) {
+
+    .differenciate{
+        display: none;
+    }
+    .tittle-in{
+        display: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    /* body */
+    body{
+        height: 100%;
+    }
+    nav{
+        display: none;
+    }
+
+    /* meet-our-team */
+    .meet-tittle{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        padding: 0px 10px;
+        transform: scale(0.8);
+    }
+    .Meet-Our-Team{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .meet-conntainer{
+        text-align: center;
+        /* background-color: #00eeff; */
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        border: 2px solid black;
+        box-shadow: 1px 1px 10px 1px;
+    }
+    .team-img{
+        width: 150px;
+        border-radius: 100%;
+        margin-top: 15px;
+        background-color: #ffffff;
+        border: 2px solid black;
+    }
+    .meet-conntainer:hover .team-img{
+        transform: rotatez(-360deg) scale(0.90);
+        transition: transform 0.5s ease;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 844px) and (orientation: landscape) {
+    nav{
+        width: 800px;
+        margin-left: 65px;
+    }
+    nav li a{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .gcam{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gcam-container{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        border: 3px solid black;
+        box-shadow: 2px 2px 10px 1px black;
+        margin-left: 375px;
+        padding: 50px 50px;
+        
+    }
+    .gcam-png{
+        width: 250px;
+    }
+    .gcam-info{
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        width: 550px;
+    }
+            /* whyshould style */
+            .whyshould{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 240px;
+                padding: 100px 200px;
+                padding: 10px 10px;
+                width: 600px;
+            }
+            .why-tittle{
+                font-size: 20px;
+                text-align: center;
+                font-weight: 700;
+            }
+            .why-info{
+                text-align: center;
+                font-size: 20px;
+                font-weight: 500;
+                margin-top: 20px;
+                width: 500px;
+            }
+                /* best gcam style section  */
+    .best-gcam-container{
+        display: flex;
+        justify-content: center;
+        margin-left: 225px;
+        padding: 5px 30px;
+        width: 600px;
+    }
+    .best-gcam-img{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px 1px black;
+    }
+    .best-gcam-info{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 20px;
+        width: 700px;
+    }
+        /* meet-our-team */
+        .meet-tittle{
+            display: flex;
+            justify-content: center;
+            width: 1100px;
+        }
+        .Meet-Our-Team{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-right: 0;
+            margin-left: 8%;
+        }
+        .meet-conntainer{
+            text-align: center;
+            /* background-color: #00eeff; */
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            border: 2px solid black;
+            box-shadow: 1px 1px 10px 1px;
+        }
+        .team-img{
+            width: 150px;
+            border-radius: 100%;
+            margin-top: 15px;
+            background-color: #ffffff;
+            border: 2px solid black;
+        }
+        .copy{
+            position: relative;
+            left: 130px;
+        }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 800px) {
+    nav{
+        position: relative;
+        bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+        gap: 100px;
+        width: 800px;
+        margin-left: 65px;
+        border-bottom: 1px solid black;
+        border-radius: 20px;
+        box-shadow: 1px 5px 10px 0px;
+    }
+    .gcam{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gcam-container{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        border: 3px solid black;
+        box-shadow: 2px 2px 10px 1px black;
+        margin-left: 350px;
+        padding: 100px 100px;
+        margin-right: 20px;
+    }
+    .gcam-png{
+        width: 250px;
+    }
+    .gcam-info{
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        width: 550px;
+    }
+        /* whyshould style */
+        .whyshould{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 30px;
+            padding: 100px 200px;
+            margin-right: 20px;
+            padding: 10px 10px;
+            width: 1000px;
+        }
+        .why-tittle{
+            font-size: 20px;
+            text-align: center;
+            font-weight: 700;
+        }
+        .why-info{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 20px;
+            width: 700px;
+        }
+    
+    /* best gcam style section  */
+    .best-gcam-container{
+        display: flex;
+        justify-content: center;
+        margin-left: 60px;
+        margin-right: 0px;
+        padding: 5px 30px;
+        width: 900px;
+    }
+    .best-gcam-img{
+        margin-top: 20px;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px 1px black;
+    }
+    .best-gcam-info{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 20px;
+        width: 700px;
+    }
+        /* meet-our-team */
+        .meet-tittle{
+            display: flex;
+            justify-content: center;
+            width: 1100px;
+        }
+        .Meet-Our-Team{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-right: 0;
+            margin-left: 8%;
+        }
+        .meet-conntainer{
+            text-align: center;
+            /* background-color: #00eeff; */
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            border: 2px solid black;
+            box-shadow: 1px 1px 10px 1px;
+        }
+        .team-img{
+            width: 150px;
+            border-radius: 100%;
+            margin-top: 15px;
+            background-color: #ffffff;
+            border: 2px solid black;
+        }
+  }
