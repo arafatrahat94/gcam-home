@@ -239,14 +239,53 @@ nav li:hover > a{
     width: 800px;
 }
 /* meet our team */
+.meet-button{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.collapsible {
+    /* background-image: url(images/); */
+    margin-left: 0%;
+    margin-right: 0%;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    /* padding: 18px; */
+    border: none;
+    outline: none;
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+ .collapsible:hover{
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(255, 3, 3);
+  }
+  .active{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+  }
+
+  .content {
+    display: none;
+    overflow: hidden;
+  }
+
 .meet-tittle{
     text-align: center;
-    margin: 50px 0;
     font-size: 30px;
     font-weight: 600;
-}
-.meet-tittle:hover{
-    color: red;
+    padding: 20px;
+    transform: scale(0.85);
 }
 .meet-link{
     text-decoration: none;
@@ -284,10 +323,9 @@ nav li:hover > a{
     transform: rotate() scale();
     animation-play-state: inherit;
 }
-
 /* copy right section */
 .copy{
-    margin-top: 10%;
+    margin-top: 20px;
     border:2px solid #000000;
     width: auto;
     background-color: #000000;

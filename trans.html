@@ -94,67 +94,87 @@
         </section>
     </header>
     <main>
-        <section>
-            <h1 class="meet-tittle">Meet Our Team</h1>
-        </section>
-        <section class="Meet-Our-Team">
-            <div class="meet-conntainer">
-                <img class="team-img" src="images/wha.png" alt="">
-                <a href="" class="meet-link">
-                    <div class="meet-info">
-                        <h1 class="meet-name">Arafath Hossain <br>Lead Config Maker</h1>
-                        <p class="meet-name" style="font-weight: 600;">Owner Of TECH INFINITY 1</p>
-                    </div>
-                </a>
-            </div>
-            <div class="meet-conntainer">
-                <img class="team-img" src="images/pic.webp" alt="">
-                <a href="" class="meet-link">
-                    <div class="meet-info">
-                        <h1 class="meet-name">Saddam Hossain <br>Framing and Concept</h1>
-                        <p class="meet-name" style="font-weight: 600;">Owner Of  Flex Edit</p>
-                    </div>
-                </a>
-            </div>
-            <div class="meet-conntainer">
-                <a href="" class="meet-link">
-                    <img class="team-img" src="images/yas (1).jpg" alt="">
-                    <div class="meet-info">
-                        <h1 class="meet-name">Yasir Arafath <br>Lead Config Maker</h1>
-                        <p class="meet-name" style="font-weight: 600;">Owner Of Yas Gcam & Configs</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="meet-conntainer">
-                <a href="" class="meet-link">
-                    <img class="team-img" src="images/jit.webp" alt="">
-                    <div class="meet-info">
-                        <h1 class="meet-name">Jit  <br>Lead Config Maker</h1>
-                        <p class="meet-name" style="font-weight: 600;">Owner Of Photogenic</p>
-                    </div>
-                </a>
-            </div>
-            <div class="meet-conntainer">
-                <a href="" class="meet-link">
-                    <img class="team-img" src="images/RDX.webp" alt="">
-                    <div class="meet-info">
-                        <h1 class="meet-name">RDX STAR <br>Lead Config Tester</h1>
-                        <p class="meet-name" style="font-weight: 600;">Owner Of Google Camera Hub</p>
-                    </div>
-                </a>
-            </div>
-            <div class="meet-conntainer">
-                <a class="meet-link" href="">
-                    <img class="team-img" src="images/ashik.webp" alt="">
-                    <div class="meet-info">
-                        <h1 class="meet-name">محمد اشيكول اسلم <br>Group Manager</h1>
-                        <p class="meet-name" style="font-weight: 600;position: relative; bottom: 10px;">Moderator Of Facebook Group
-                        </p>
-                </a>
+        <section class="meet-button">
+            <section class="meet-container">
+                <button type="button" class="collapsible meet-align"><h1 class="meet-tittle">Meet Our Team</h1></button>
+                <div class="content">
+                    <section class="Meet-Our-Team">
+                        <div class="meet-conntainer">
+                            <img class="team-img" src="images/wha.png" alt="">
+                            <a href="" class="meet-link">
+                                <div class="meet-info">
+                                    <h1 class="meet-name">Arafath Hossain <br>Lead Config Maker</h1>
+                                    <p class="meet-name" style="font-weight: 600;">Owner Of TECH INFINITY 1</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="meet-conntainer">
+                            <img class="team-img" src="images/pic.webp" alt="">
+                            <a href="" class="meet-link">
+                                <div class="meet-info">
+                                    <h1 class="meet-name">Saddam Hossain <br>Framing and Concept</h1>
+                                    <p class="meet-name" style="font-weight: 600;">Owner Of  Flex Edit</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="meet-conntainer">
+                            <a href="" class="meet-link">
+                                <img class="team-img" src="images/yas (1).jpg" alt="">
+                                <div class="meet-info">
+                                    <h1 class="meet-name">Yasir Arafath <br>Lead Config Maker</h1>
+                                    <p class="meet-name" style="font-weight: 600;">Owner Of Yas Gcam & Configs</p>
+                                </div>
+                            </a>
+                        </div>
+                
+                        <div class="meet-conntainer">
+                            <a href="" class="meet-link">
+                                <img class="team-img" src="images/jit.webp" alt="">
+                                <div class="meet-info">
+                                    <h1 class="meet-name">Jit  <br>Lead Config Maker</h1>
+                                    <p class="meet-name" style="font-weight: 600;">Owner Of Photogenic</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="meet-conntainer">
+                            <a href="" class="meet-link">
+                                <img class="team-img" src="images/RDX.webp" alt="">
+                                <div class="meet-info">
+                                    <h1 class="meet-name">RDX STAR <br>Lead Config Tester</h1>
+                                    <p class="meet-name" style="font-weight: 600;">Owner Of Google Camera Hub</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="meet-conntainer">
+                            <a class="meet-link" href="">
+                                <img class="team-img" src="images/ashik.webp" alt="">
+                                <div class="meet-info">
+                                    <h1 class="meet-name">محمد اشيكول اسلم <br>Group Manager</h1>
+                                    <p class="meet-name" style="font-weight: 600;position: relative; bottom: 10px;">Moderator Of Facebook Group
+                                    </p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </div>
-        </section>
+                <script>
+                    var coll = document.getElementsByClassName("collapsible");
+                    var i;
+                    
+                    for (i = 0; i < coll.length; i++) {
+                      coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                          content.style.display = "none";
+                        } else {
+                          content.style.display = "block";
+                        }
+                      });
+                    }
+                    </script>
+            </section>
     </main>
 <footer>
     <section class="copy">
