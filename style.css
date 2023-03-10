@@ -75,11 +75,10 @@ body{
     z-index: 1;
     top: 0;
     right: 0;
-    /* background: linear-gradient(to bottom left, #ff5050 0%, #ffcc00 100%); */
-    background-image: url('images/dark.webp'), url('images/gradient1.png');
+    background-image: url(images/dark.webp);
     background-blend-mode: soft-light;
     overflow-x: hidden;
-    transition: 0.3s;
+    transition: 0.9s;
     padding-top: 60px;
   }
   
@@ -88,7 +87,6 @@ body{
     padding: 5px 20px 8px 8px;
     text-decoration: none;
     font-size: 20px;
-    color: #ffffff;
     display: block;
     transition: 0.5s;
     color: #000000;
