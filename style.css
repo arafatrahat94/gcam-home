@@ -245,7 +245,7 @@ nav li:hover > a{
     position: relative;
 }
 .collapsible {
-    /* background-image: url(images/); */
+    background-image: url(images/white-painted-wall-texture-background.webp);
     margin-left: 0%;
     margin-right: 0%;
     color: rgb(0, 0, 0);
@@ -258,13 +258,14 @@ nav li:hover > a{
     margin-bottom: 30px;
     border-radius: 10px;
     border: 2px solid black;
+    transition: 0.2s;
   }
  .collapsible:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(2, 2, 2);
     background-color: #000000;
     /* border: 1px solid black; */
     border-radius: 10px;
-    box-shadow: 10px 10px 10px rgb(255, 3, 3);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
   }
   .active{
     color: rgb(0, 0, 0);
@@ -440,6 +441,13 @@ nav li:hover > a{
         width: 300px;
     }
     /* meet-our-team */
+    .meet-tittle{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        padding: 0px 10px;
+        transform: scale(0.8);
+    }
     .Meet-Our-Team{
         display: flex;
         flex-direction: column;
