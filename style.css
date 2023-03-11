@@ -224,10 +224,11 @@ nav li:hover > a{
 .best-gcam-img{
     width: 300px;
     border-radius: 10px;
-    animation: zoom 2s ease 0s 5 alternate ;
+    animation: zoom 2s ease 0s 3 alternate ;
     transform: rotate() scale();
     animation-play-state: initial;
     border-radius: 0%;
+    border-radius: 10px;
 }
 
 .best-gcam-info{
@@ -423,7 +424,7 @@ nav li:hover > a{
     }
     .best-gcam-container:hover .best-gcam-img{
         transform: rotate(-360deg) scale(0.95);
-        transition: transform 1s ease;
+        transition: transform 0.1s ease;
     }
     .best-gcam-img{
         margin-top: 20px;
