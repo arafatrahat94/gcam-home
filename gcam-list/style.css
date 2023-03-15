@@ -8,6 +8,14 @@
     box-sizing: border-box;
     font-family: 'Varela Round', sans-serif;
 }
+@keyframes zoom {
+    from{
+        scale: 0;
+    }
+    to{
+        scale: 1;
+    }
+}
 
 /* gcam list section */
 .gcam{
@@ -23,15 +31,6 @@
     box-shadow: 2px 2px 10px 1px rgb(112, 106, 106);
     /* background-color: #000000; */
 }
-@keyframes zoom {
-    from{
-        scale: 0;
-    }
-    to{
-        scale: 1;
-    }
-}
-
 .gcam-container{
     /* background-color: #00eeff; */
     text-align: center;
@@ -68,5 +67,5 @@
     background-blend-mode: multiply;
     border-radius: 10px 10px 0 0;
     font-weight: 600;
-    box-shadow: 1px 1px 20px 1px;
+    box-shadow: 1px 1px 20px 1px
 }
