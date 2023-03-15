@@ -102,9 +102,6 @@
     .differenciate{
         display: none;
     }
-    .tittle-in{
-        display: none;
-    }
 }
 @media only screen and (max-width: 500px) {
     /* body */
