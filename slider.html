@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    <!-- -----------------------------------slider --------------------->
+    <div id="slider">
+        <ul id="slideWrap"> 
+            <li><img src="images/20.webp" alt=""></li>
+            <li><img src="images/21.webp" alt=""></li>
+            <li><img src="images/23.webp" alt=""></li>
+          </ul>
+          <a id="prev" href="#">&#8810;</a>
+          <a id="next" href="#">&#8811;</a>
+    </div>
+
+    <script>var slider = document.getElementById("slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementById("slideWrap");
+        var count = 1;
+        var items = slideList.querySelectorAll("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        
+        window.addEventListener('resize', function() {
+          sliderWidth = slider.offsetWidth;
+        });
+        var nextSlide = function() {
+        if(count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+        }
+        else if(count = items) {
+            slideList.style.left = "0px";
+            count = 1;
+        }
+        };
+        next.addEventListener("click", function() {
+        nextSlide();
+        });
+
+        prev.addEventListener("click", function() {
+        prevSlide();
+        });
+        setInterval(function() {
+        nextSlide()
+        }, 5000);
+        window.onload = function() {
+        responsiveSlider();  
+        }
+        </script>
+
+</body>
+</html>

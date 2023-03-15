@@ -1,109 +1,41 @@
-body{
-    background-image: url('images/white-painted-wall-texture-background.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Varela Round', sans-serif;
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
-.language:hover{
-    color: #00eeff;
+
+/* copy right section */
+.copy{
+    padding-top: 10px;
+    margin-top: 20px;
+    border:2px solid #000000;
+    width: auto;
+    background-color: #000000;
+    background-blend-mode: multiply;
+    border-radius: 10px 10px 0 0;
+    font-weight: 600;
+    box-shadow: 1px 1px 20px 1px;
 }
+
 .tittle-in{
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
-    padding: 15px;
+    padding: 10px 15px;
     border-radius: 0 0 20px 20px;
-    position: relative;
+
     bottom: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 40px;
     font-size: 16px;
-    border: 2px solid black;
-    border-top: 2.5px solid black;
     display: flex;
     justify-content: center;
-    box-shadow: 2px 2px 10px 1px black;
+    box-shadow: 2px 2px 10px 1px rgb(111, 108, 108);
 }
-@keyframes zoom {
-    from{
-        transform: rotate(0)
-        scale(0);
-        border-radius: 50%;
-    }
-    to{
-        transform: rotate(-360deg);
-        scale: 1;
-        border-radius: 10px;
-    }
-}
-@keyframes zoom1 {
-    from{
-        transform: rotate(0)
-        scale(0);
-    }
-    to{
-        transform: rotate(-360deg);
-        scale: 1;
-    }
-}
-/* side nav bar */
-.nav-bar{
-    display: flex;
-    justify-content: space-between;
-}
-.left-button{
-    display: flex;
-    gap: 20px;
-}
-.back-button{
-    padding-left: 2px;
-    padding-top: 7px;
-    font-size: 28px;
-    text-decoration: none;
-    color: #000000;
-}
-.back-button:hover{
-    color: red;
-}
-.closebtn{
-    color: #ffffff;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    /* background: linear-gradient(to bottom left, #ff5050 0%, #ffcc00 100%); */
-    background-image: url('images/dark.webp');
-    overflow-x: hidden;
-    transition: 0.3s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    text-align: end;
-    padding: 5px 20px 8px 8px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #000000;
-    display: block;
-    transition: 0.5s;
-    font-weight: 600;
-  }
-  
-  .sidenav a:hover {
-    color: #00eeff;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    font-size: 36px;
-    margin-right: 50px;
-  }
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 1px;}
@@ -136,13 +68,16 @@ body{
     row-gap: 20px;
 }
 .meet-conntainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     /* background-color: #00eeff; */
     width: 270px;
     height: 400px;
     border-radius: 20px;
-    border: 2px solid black;
-    box-shadow: 1px 1px 10px 1px;
+    box-shadow: 1px 1px 10px 1px rgb(116, 108, 108);
     margin-bottom: 30px;
 }
 .meet-conntainer:hover{
@@ -154,8 +89,8 @@ body{
     width: 250px;
     border-radius: 100%;
     margin-top: 10px;
+    margin-bottom: 10px;
     background-color: #ffffff;
-    border: 2px solid black;
     animation: zoom1 2s ease 0s 3 alternate ;
     transform: rotate() scale();
     animation-play-state: inherit;
@@ -200,7 +135,7 @@ body{
         width: 300px;
         height: 300px;
         border-radius: 20px;
-        border: 2px solid black;
+
         box-shadow: 1px 1px 10px 1px;
     }
     .team-img{
@@ -210,10 +145,7 @@ body{
         background-color: #ffffff;
         border: 2px solid black;
     }
-    .meet-conntainer:hover .team-img{
-        transform: rotatez(-360deg) scale(0.90);
-        transition: transform 0.5s ease;
-    }
+
   }
   @media only screen and (min-width: 768px) and (max-width: 844px) and (orientation: landscape) {
     nav{
@@ -223,74 +155,6 @@ body{
     nav li a{
         font-size: 12px;
         font-weight: 700;
-    }
-    .gcam{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .gcam-container{
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        border: 3px solid black;
-        box-shadow: 2px 2px 10px 1px black;
-        margin-left: 375px;
-        padding: 50px 50px;
-        
-    }
-    .gcam-png{
-        width: 250px;
-    }
-    .gcam-info{
-        font-size: 20px;
-        font-weight: 500;
-        text-align: center;
-        width: 550px;
-    }
-            /* whyshould style */
-            .whyshould{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-left: 240px;
-                padding: 100px 200px;
-                padding: 10px 10px;
-                width: 600px;
-            }
-            .why-tittle{
-                font-size: 20px;
-                text-align: center;
-                font-weight: 700;
-            }
-            .why-info{
-                text-align: center;
-                font-size: 20px;
-                font-weight: 500;
-                margin-top: 20px;
-                width: 500px;
-            }
-                /* best gcam style section  */
-    .best-gcam-container{
-        display: flex;
-        justify-content: center;
-        margin-left: 225px;
-        padding: 5px 30px;
-        width: 600px;
-    }
-    .best-gcam-img{
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 300px;
-        border-radius: 10px;
-        box-shadow: 2px 2px 10px 1px black;
-    }
-    .best-gcam-info{
-        text-align: center;
-        font-size: 20px;
-        font-weight: 500;
-        margin-top: 20px;
-        width: 700px;
     }
         /* meet-our-team */
         .meet-tittle{
